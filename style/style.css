@@ -390,7 +390,6 @@ section {
 
 .about-skills .skills-icons {
 	display: grid;
-	-ms-grid-columns: (1fr) [6];
 	grid-template-columns: repeat(6, 1fr);
 	border: 1px solid var(--color-grey-5);
 	-webkit-transition: all 0.4s ease-in-out;
