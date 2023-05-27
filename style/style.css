@@ -229,9 +229,7 @@ section {
 }
 
 .header-content {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [2];
 	grid-template-columns: repeat(2, 1fr);
 	height: 100%;
 }
@@ -308,18 +306,14 @@ section {
 }
 
 .about-container {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [2];
 	grid-template-columns: repeat(2, 1fr);
 	padding-top: 3.5rem;
 	padding-bottom: 4rem;
 }
 
 .about-container .right-about {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [2];
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
 }
@@ -389,15 +383,12 @@ section {
 }
 
 .about-skills {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-rows: (50%) [50%];
 	grid-template-rows: repeat(50%, 50%);
 	padding-bottom: 4rem;
 }
 
 .about-skills .skills-icons {
-	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: (1fr) [6];
 	grid-template-columns: repeat(6, 1fr);
@@ -451,9 +442,7 @@ section {
 }
 
 .timeline {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [2];
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
 	padding-bottom: 3rem;
@@ -522,9 +511,7 @@ section {
 }
 
 .projects {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr) [2];
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 3.5rem;
 	margin-top: 3rem;
@@ -648,7 +635,6 @@ section {
 }
 
 .contact-content .left-contact .contact-info .contact-item .icon {
-	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: 40px 1fr;
 	grid-template-columns: 40px 1fr;
@@ -1043,7 +1029,6 @@ section {
 		padding: 2rem 2.5rem;
 	}
 	.section .skills-icons {
-		-ms-grid-columns: (1fr) [3];
 		grid-template-columns: repeat(3, 1fr);
 	}
 	.submit-btn {
@@ -1212,7 +1197,6 @@ section {
 		padding: 1.5rem 1.5rem;
 	}
 	.section .skills-icons {
-		-ms-grid-columns: (1fr) [2];
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.section .skills-icons img {
