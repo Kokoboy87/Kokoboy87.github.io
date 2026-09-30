@@ -253,7 +253,7 @@
   .projects .project .project-text h4 {
     font-size: 1.2rem;
   }
-  .projects .project .project-text p {
+  .projects .project .project-text .project-points {
     line-height: 1.2rem;
     font-size: 0.9rem;
     padding-bottom: 0.8rem;

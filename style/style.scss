@@ -376,8 +376,11 @@ section {
 				color: var(--color-grey-2);
 				line-height: 2rem;
 			}
+			ul {
+				padding-left: 1.2rem;
+			}
 			li {
-				list-style: disc inside;
+				list-style: disc outside;
 			}
 			.cyber-status {
 				padding: 0.2rem 0.8rem;
@@ -462,9 +465,10 @@ section {
 		}
 		ul {
 			color: var(--color-grey-2);
+			padding-left: 1.2rem; //---- Bullets outside, so wrapped lines line up with the text ----//
 			li {
 				color: var(--color-grey-2);
-				list-style: disc inside;
+				list-style: disc outside;
 			}
 		}
 	}
@@ -527,10 +531,13 @@ section {
 					text-transform: uppercase;
 				}
 			}
-			p {
+			.project-points {
 				color: var(--color-grey-2);
 				line-height: 2rem;
-				padding-bottom: 1rem;
+				padding: 0 0 1rem 1.2rem;
+				li {
+					list-style: disc outside;
+				}
 			}
 		}
 	}

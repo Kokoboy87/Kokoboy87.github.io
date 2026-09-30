@@ -360,8 +360,11 @@ section {
   color: var(--color-grey-2);
   line-height: 2rem;
 }
+.about-cyber .cyber-items .cyber-item ul {
+  padding-left: 1.2rem;
+}
 .about-cyber .cyber-items .cyber-item li {
-  list-style: disc inside;
+  list-style: disc outside;
 }
 .about-cyber .cyber-items .cyber-item .cyber-status {
   padding: 0.2rem 0.8rem;
@@ -443,10 +446,11 @@ section {
 }
 .timeline .timeline-item ul {
   color: var(--color-grey-2);
+  padding-left: 1.2rem;
 }
 .timeline .timeline-item ul li {
   color: var(--color-grey-2);
-  list-style: disc inside;
+  list-style: disc outside;
 }
 
 .projects {
@@ -507,10 +511,13 @@ section {
   font-size: 0.75rem;
   text-transform: uppercase;
 }
-.projects .project .project-text p {
+.projects .project .project-text .project-points {
   color: var(--color-grey-2);
   line-height: 2rem;
-  padding-bottom: 1rem;
+  padding: 0 0 1rem 1.2rem;
+}
+.projects .project .project-text .project-points li {
+  list-style: disc outside;
 }
 
 .contact-content {
@@ -949,7 +956,7 @@ section {
   .projects .project .project-text h4 {
     font-size: 1.2rem;
   }
-  .projects .project .project-text p {
+  .projects .project .project-text .project-points {
     line-height: 1.2rem;
     font-size: 0.9rem;
     padding-bottom: 0.8rem;
