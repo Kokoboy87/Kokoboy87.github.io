@@ -33,11 +33,13 @@ function pageTransitions() {
 		}
 	})
 
-	//----Toggle Theme ----//
+	//----Toggle Theme (saved in localStorage so it survives a refresh) ----//
 	const themeBtn = document.querySelector('.theme-btn')
 	themeBtn.addEventListener('click', () => {
-		let element = document.body
-		element.classList.toggle('light-mode')
+		const isLight = document.body.classList.toggle('light-mode')
+		try {
+			localStorage.setItem('theme', isLight ? 'light' : 'dark')
+		} catch (e) {}
 	})
 }
 

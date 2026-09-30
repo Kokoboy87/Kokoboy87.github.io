@@ -14,9 +14,15 @@
 			integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
-		<title>Portfolio</title>
+		<title>Georgios Kokotinis | Cybersecurity Portfolio</title>
 	</head>
 	<body id="main-content">
+		<!-- Apply the saved theme before the page paints (toggle logic lives in app.js) -->
+		<script>
+			try {
+				if (localStorage.getItem('theme') === 'light') document.body.classList.add('light-mode')
+			} catch (e) {}
+		</script>
 		<header class="section sec1 header active" id="home">
 			<div class="header-content">
 				<div class="left-header">
@@ -27,9 +33,9 @@
 				</div>
 				<div class="right-header">
 					<h1 class="name">Hi, I am <span>Georgios Kokotinis.</span></h1>
-					<h2>A Full Stack Developer</h2>
+					<h2>Web Developer &amp; <span class="no-wrap">Junior Cybersecurity Analyst</span></h2>
 					<div class="btn-con">
-						<a href="data/Georgios Kokotinis Resume.pdf" class="main-btn" download>
+						<a href="data/Georgios_Kokotinis_CyberSecurity_Resume.pdf" class="main-btn" download>
 							<span class="btn-text">Download Resume</span>
 							<span class="btn-icon"><i class="fa-solid fa-download"></i></span>
 						</a>
@@ -44,13 +50,12 @@
 				</div>
 				<div class="about-container">
 					<div class="left-about">
-						<h4>Information About Me</h4>
 						<p>
-							A software developer with 7+ years of delivering expert customer service and sales. Passionate about technology and developing solutions that positively impact lives. Eager to leverage excellent communication, relationship
-							management, diverse experience, and technical skills to a software team.
+							Career changer with 15+ years of operational and management experience, transitioning into cybersecurity. Self-taught web developer with hands-on experience building full-stack applications. Currently pursuing the HTB
+							Junior Cybersecurity Analyst (CJCA) certification with a focus on SOC analyst roles, with a foundation in Linux, networking, and security concepts built through Hack The Box Academy.
 						</p>
 						<div class="btn-con">
-							<a href="data/Georgios Kokotinis Resume.pdf" class="main-btn" download>
+							<a href="data/Georgios_Kokotinis_CyberSecurity_Resume.pdf" class="main-btn" download>
 								<span class="btn-text">Download Resume</span>
 								<span class="btn-icon"><i class="fa-solid fa-download"></i></span>
 							</a>
@@ -59,71 +64,99 @@
 					<div class="right-about">
 						<div class="about-item">
 							<div class="abt-text">
-								<p class="large-text">640+</p>
+								<p class="large-text">15+</p>
 								<p class="small-text">
-									Hours<br />
-									of intense Bootcamp
+									Years<br />
+									of operational experience
 								</p>
 							</div>
 						</div>
 						<div class="about-item">
 							<div class="abt-text">
-								<p class="large-text">15</p>
+								<p class="large-text">5+</p>
 								<p class="small-text">
-									Months<br />
-									of self study
+									Years<br />
+									of coding
 								</p>
 							</div>
 						</div>
 						<div class="about-item">
 							<div class="abt-text">
-								<p class="large-text">2000+</p>
+								<p class="large-text">4</p>
 								<p class="small-text">
-									Hours of <br />
-									coding
+									Live<br />
+									projects
 								</p>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-cyber">
+					<h4 class="stats-title">Cybersecurity</h4>
+					<div class="cyber-items">
+						<div class="cyber-item">
+							<i class="fa-solid fa-shield-halved"></i>
+							<h5>HTB Junior Cybersecurity Analyst (CJCA)</h5>
+							<p class="cyber-status">Path in progress</p>
+						</div>
+						<div class="cyber-item">
+							<i class="fa-solid fa-circle-check"></i>
+							<h5>Completed HTB Academy Modules</h5>
+							<ul>
+								<li>Linux Fundamentals</li>
+								<li>Network Foundations</li>
+								<li>Introduction to Information Security</li>
+							</ul>
+						</div>
+						<div class="cyber-item">
+							<i class="fa-solid fa-flag"></i>
+							<h5>Hands-on Practice</h5>
+							<p>Practicing on Hack The Box labs and machines.</p>
 						</div>
 					</div>
 				</div>
 				<div class="about-skills">
 					<h4 class="stats-title">My Skills</h4>
 					<div class="skills-icons">
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="HTML5" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="CSS3" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" alt="jQuery" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="React" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB" />
 
-						<img src="https://img.icons8.com/color/96/000000/api.png" />
+						<img src="https://img.icons8.com/color/96/000000/api.png" alt="API" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original-wordmark.svg" alt="Vercel" class="icon-black" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/railway/railway-original-wordmark.svg" alt="Railway" class="icon-white" />
 
-						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" />
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg" alt="Ubuntu" />
+
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kalilinux/kalilinux-original.svg" alt="Kali Linux" />
 					</div>
 				</div>
 				<h4 class="stats-title">My Timeline</h4>
@@ -132,36 +165,32 @@
 						<div class="timeline-icon">
 							<i class="fa-solid fa-briefcase"></i>
 						</div>
-						<p class="timeline-duration">2015 - present</p>
-						<h5>Carpenter/ Furniture Designer <span>- GK Rustic Woodcraft</span></h5>
+						<p class="timeline-duration">2025 - Present</p>
+						<h5>Lead Bartender <span>- Bertha, Washington, DC</span></h5>
 						<ul>
-							<li>Leveraged expertise in furniture design skills.</li>
-							<li>Creativity and proficiency in AutoCad and Sketch-up.</li>
-							<li>Build one-of-a kind handmade furniture for clientele.</li>
+							<li>Lead bar service and coordinate with staff and management in a high-volume, four-bar nightclub.</li>
+							<li>Trained in handling sensitive customer data and payment systems securely.</li>
 						</ul>
 					</div>
 					<div class="timeline-item">
 						<div class="timeline-icon">
 							<i class="fa-solid fa-briefcase"></i>
 						</div>
-						<p class="timeline-duration">2016 - present</p>
-						<h5>Server/ Bartender <span>- Nostos Restaurant</span></h5>
+						<p class="timeline-duration">2016 - 2025</p>
+						<h5>Server / Bartender <span>- Nostos Restaurant</span></h5>
 						<ul>
-							<li>Delivered high quality customer service in a fast paced environment while displaying knowledge in both fine dining and culture.</li>
-							<li>Offering services to elevate sales opportunity to ensure repeat customer business.</li>
-							<li>Successful ensured restaurant consistently achieved honorable mentions and reviews for service quality.</li>
+							<li>Handled high-pressure environments requiring fast decision-making and precise communication.</li>
+							<li>Trusted with sensitive financial transactions and end-of-day reconciliation.</li>
 						</ul>
 					</div>
 					<div class="timeline-item">
 						<div class="timeline-icon">
-							<i class="fa-solid fa-briefcase"></i>
+							<i class="fa-solid fa-laptop-code"></i>
 						</div>
-						<p class="timeline-duration">2021 - 2022</p>
-						<h5>Bartender <span>- Flash Club DC</span></h5>
+						<p class="timeline-duration">2020 - Present</p>
+						<h5>Web Development</h5>
 						<ul>
-							<li>Served bar patrons ordered drinks, including beer, wine, liquors, and mixed beverages.</li>
-							<li>Rang up customers on the Toast POS system and the accompanying credit card reader.</li>
-							<li>Performed daily inventory audits and weekly product and supply orders.</li>
+							<li>Bootcamp plus independent study, focused on full-stack JavaScript.</li>
 						</ul>
 					</div>
 				</div>
@@ -173,11 +202,26 @@
 					</div>
 					<div class="projects">
 						<div class="project">
-							<a href="https://superhealthyfood.herokuapp.com/" target="_blank">
-								<img src="img/Omnifood.png" alt="" />
+							<a href="https://dicetavrn.com" target="_blank">
+								<img src="img/Dice-Tavrn.jpg" alt="Dice Tavrn game screenshot" />
 							</a>
 							<div class="project-text">
-								<a href="https://superhealthyfood.herokuapp.com/" target="_blank">
+								<a href="https://dicetavrn.com" target="_blank">
+									<h4>Dice Tavrn <span class="project-tag">Featured</span></h4>
+								</a>
+								<p>
+									• Dice Tavrn is a multiplayer dice-based role-playing game with its own lore and five character classes. Original concept from 2021, rebuilt from scratch in 2026. <br />
+									• React, TypeScript, Socket.io. <br />
+									• Frontend deployed on Vercel, backend on Railway.
+								</p>
+							</div>
+						</div>
+						<div class="project">
+							<a href="https://kokoboy87.github.io/Omnifood-1/" target="_blank">
+								<img src="img/Omnifood.png" alt="Omnifood website screenshot" />
+							</a>
+							<div class="project-text">
+								<a href="https://kokoboy87.github.io/Omnifood-1/" target="_blank">
 									<h4>Omnifood</h4>
 								</a>
 								<p>
@@ -188,43 +232,27 @@
 							</div>
 						</div>
 						<div class="project">
-							<a href="https://new-weatehr-app1.herokuapp.com/" target="_blank">
-								<img src="img/New-weather-app.png" alt="" />
+							<a href="https://weather-app-nu-two-32.vercel.app/" target="_blank">
+								<img src="img/New-weather-app.png" alt="Weather Application screenshot" />
 							</a>
 							<div class="project-text">
-								<a href="https://new-weatehr-app1.herokuapp.com/" target="_blank">
+								<a href="https://weather-app-nu-two-32.vercel.app/" target="_blank">
 									<h4>Weather Application</h4>
 								</a>
 								<p>
 									• Weather Application is a weather App that fetches accurate real-time weather conditions of any given location worldwide. <br />
 									• Html, CSS, Node.js(Express), Mapbox API, Weatherstack API. <br />
-									• Used third-party services(API) to fetch geolocation and real-time weather data. With Node.js(Express) I convert the location data to a forecast and then rents them to the screen of the user with Html, and styles
+									• Used third-party services(API) to fetch geolocation and real-time weather data. With Node.js(Express) I convert the location data to a forecast and then renders them to the screen of the user with Html, and styles
 									the application with CSS.
 								</p>
 							</div>
 						</div>
 						<div class="project">
-							<a href="https://dice-tavern.herokuapp.com/" target="_blank">
-								<img src="img/Dice-Tavern.png" alt="" />
+							<a href="https://georgios.pythonanywhere.com/" target="_blank">
+								<img src="img/Note-1.png" alt="NoteAbles app screenshot" />
 							</a>
 							<div class="project-text">
-								<a href="https://dice-tavern.herokuapp.com/" target="_blank">
-									<h4>Dice Tavern</h4>
-								</a>
-								<p>
-									• Dice tavern is a role-playing dice game that puts the player against the player. it requires strategy and luck to prepare your. <br />
-									• Html, CSS, Vanilla JavaScript. <br />
-									• Html and CSS are for the style and structure of the page, and Vanilla JavaScript is responsible for rolling the dice and converting dice points into action points that the player can use to attack or defend
-									against the other player.
-								</p>
-							</div>
-						</div>
-						<div class="project">
-							<a href="https://noteables07.herokuapp.com/" target="_blank">
-								<img src="img/Note-1.png" alt="" />
-							</a>
-							<div class="project-text">
-								<a href="https://noteables07.herokuapp.com/" target="_blank">
+								<a href="https://georgios.pythonanywhere.com/" target="_blank">
 									<h4>NoteAbles</h4>
 								</a>
 								<p>
@@ -251,7 +279,7 @@
 										<i class="fa-solid fa-location-dot"></i>
 										<p>Location :</p>
 									</div>
-									<p>Alexandria, VA, USA</p>
+									<p>Fairfax, VA, USA</p>
 								</div>
 								<div class="contact-item">
 									<div class="icon">
@@ -259,7 +287,7 @@
 										<p>Email :</p>
 									</div>
 									<p>
-										<a href="mailto:kokotinis87@hotmail.com?">Kokotinis87@hotmail.com</a>
+										<a href="mailto:kokotinis87@gmail.com">kokotinis87@gmail.com</a>
 									</p>
 								</div>
 								<div class="contact-item">
@@ -277,9 +305,6 @@
 									</a>
 									<a href="https://www.linkedin.com/in/georgioskokotinis/" target="_blank">
 										<i class="fa-brands fa-linkedin"></i>
-									</a>
-									<a href="https://twitter.com/GKokotinis" target="_blank">
-										<i class="fa-brands fa-twitter"></i>
 									</a>
 								</div>
 							</div>

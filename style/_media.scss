@@ -48,6 +48,7 @@
 		grid-template-columns: 1fr;
 		padding-top: 5.5rem;
 		.right-about {
+			grid-template-columns: 1fr;
 			padding-top: 2.5rem;
 		}
 	}
@@ -56,6 +57,10 @@
 		grid-template-columns: 1fr;
 		padding-top: 5.5rem;
 		margin: 0;
+	}
+
+	.about-cyber .cyber-items {
+		grid-template-columns: 1fr;
 	}
 
 	.main-title {
@@ -111,6 +116,11 @@
 	.header-content .left-header .image {
 		margin: 0 auto;
 		width: 80%;
+	}
+
+	//---- Keep "Junior Cybersecurity Analyst" on one line ----//
+	.header-content .right-header h2 {
+		font-size: clamp(1rem, 4.4vw, 1.5rem);
 	}
 
 	.section .skills-icons {
@@ -272,9 +282,6 @@
 		}
 		.left-about {
 			padding-right: 0;
-			h4 {
-				font-size: 1.5rem;
-			}
 			p {
 				line-height: 1.5rem;
 				padding-left: 8px;
@@ -375,6 +382,18 @@
 				height: 4rem;
 				width: 4rem;
 			}
+		}
+	}
+
+	.about-cyber .cyber-items .cyber-item {
+		padding: 1rem;
+		h5 {
+			font-size: 0.9rem;
+		}
+		p,
+		li {
+			font-size: 0.8rem;
+			line-height: 1.5rem;
 		}
 	}
 	.submit-btn {
